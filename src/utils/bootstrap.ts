@@ -1,11 +1,11 @@
-import {injectGlobal} from "../theme/StyledComponents";
+import {createGlobalStyle} from "../theme/StyledComponents";
 
 let initialized = false;
 
 function bootstrap() {
   if (!initialized) {
     // tslint:disable-next-line:no-unused-expression
-    injectGlobal`
+    createGlobalStyle`
       @-ms-viewport {
         width: device-width;
       }

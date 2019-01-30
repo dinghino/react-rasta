@@ -1,11 +1,11 @@
-import {injectGlobal} from "../theme/StyledComponents";
+import {createGlobalStyle} from "../theme/StyledComponents";
 
 let applied = false;
 
 export default () => {
   if (!applied) {
     // tslint:disable-next-line:no-unused-expression
-    injectGlobal`
+    createGlobalStyle`
       html,
       body,
       body > div {
