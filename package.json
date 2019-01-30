@@ -13,8 +13,7 @@
   "license": "MIT",
   "keywords": ["grid", "layout", "css", "flexbox"],
   "scripts": {
-    "build":
-      "yarn prettier && yarn lint && yarn test:coverage && (tsc & tsc -p ./tsconfig.es5.json)",
+    "build": "(tsc & tsc -p ./tsconfig.es5.json)",
     "build-storybook": "build-storybook",
     "cover": "coveralls < coverage/lcov.info",
     "lint": "yarn lint:code && yarn lint:style",
@@ -68,5 +67,7 @@
     "tslint-sonarts": "^1.6.0",
     "typescript": "^2.9.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/styled-components": "^4.1.6"
+  }
 }
